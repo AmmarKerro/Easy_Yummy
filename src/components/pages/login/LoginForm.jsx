@@ -1,10 +1,7 @@
 import { useState } from "react";
 
-export default function LoginPage() {
+export default function LoginForm() {
   const [name, setName] = useState("");
-  // const handleClicK = () => {
-  //   if (name.length > 0) alert(`Bonjour ${name}`);
-  // };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -14,10 +11,10 @@ export default function LoginPage() {
 
   return (
     <div>
-      <h1>Bienvenue chez nous !</h1>
-      <br />
-      <h3>Connectez-vous</h3>
       <form action="submit" onSubmit={handleSubmit}>
+        <h1>Bienvenue chez nous !</h1>
+        <br />
+        <h3>Connectez-vous</h3>
         <input
           type="text"
           placeholder="Entrez votre prénom..."
