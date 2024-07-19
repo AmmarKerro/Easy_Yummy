@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function LoginForm() {
   const [name, setName] = useState("");
@@ -23,6 +24,7 @@ export default function LoginForm() {
           required
         ></input>
         <button type="submit">Accéder à votre espace</button>
+        <Link to="/order">Vers OrderPage</Link>
       </form>
     </div>
   );
